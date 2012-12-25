@@ -4,16 +4,12 @@ Blog::Application.routes.draw do
   
   devise_for :users
 
-  resources :posts do
-    post "comment", :on => :collection
-  end
+  resources :movies 
 
-  root :to => 'posts#index'
+  root :to => 'movies#index'
 
   namespace :admin do
-    resources :posts do
-      get 'recent_comments', :on => :collection
-    end
+    resources :movies 
   end
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,21 @@
+.row-fluid.span12
+      /.span12
+      .page-header
+        = link_to 'Add New Movie', new_admin_movie_path, :class => 'btn btn-primary btn-medium pull-right'
+        h3 Listing movies
+      p
+      - @movies.each do |movie|
+        .span3.panel
+          .content
+            
+            p
+              h4 = link_to movie.title, movie
+              /i.muted = movie.created_at.strftime("%d-%b-%Y %I:%M:%S %p")  
+            
+            small = raw(summarize(movie.description, 200))
+            P 
+              small #{movie.tag_list}
+              = link_to 'Edit', admin_movie_path(movie), :class => 'pull-right'
+              = link_to 'Destroy', admin_movie_path(movie), confirm: 'Are you sure?', method: :delete, :class => 'pull-right'
+            
+              

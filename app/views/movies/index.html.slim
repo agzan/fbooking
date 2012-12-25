@@ -1,0 +1,13 @@
+.row-fluid.span12
+    
+        /.page-header
+        /h3 Recent posts
+        - @movies.each do |movie|
+          .span3.panel
+            .content
+              h4 = link_to movie.title, movie
+              small = raw(summarize(movie.description, 400))
+              P  
+                small #{movie.tag_list}
+              /i.muted = movie.created_at.strftime("%d-%b-%Y %I:%M:%S %p")
+        
