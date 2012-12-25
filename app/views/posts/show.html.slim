@@ -1,0 +1,14 @@
+.row-fluid
+  .well
+    .page-header
+      h3 = @post.title
+      i.muted = @post.created_at.strftime('%d-%b-%Y %I:%M %p')
+    p
+      = @post.description
+    p
+      strong Tags : 
+      small #{@post.tag_list}
+      
+    p
+      h5 Comments : 
+      = render 'comments'

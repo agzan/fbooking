@@ -1,0 +1,23 @@
+#comments
+  ul.nav.nav-list#comments_list
+    - @post.comment_threads.each do |comment|
+      = render 'comment', {:comment => comment}
+/= form_tag :action => "comment", :id => @message.id
+= simple_form_for @post, :url => comment_posts_path, :method => :post, :remote => true do |f|
+  '  Comment:
+  = hidden_field_tag 'post_id', @post.id 
+  = text_area_tag 'body', '', :rows => 2, :class => 'comment_text span12'
+  = f.submit "Comment", :class=> "btn btn-primary btn-small comment_button"
+
+javascript:
+
+  $('.comment_button').click(function(e){
+    if($('.comment_text').val() == ""){
+      e.preventDefault();
+      $('.comment_text').css('border-color', 'red');
+    }else{
+      $('.comment_text').css('border-color', '#CCC');
+    }
+  })
+
+

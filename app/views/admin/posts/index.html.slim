@@ -1,0 +1,25 @@
+.row-fluid.span12
+      /.span12
+      .page-header
+        h3 Listing posts
+      = link_to 'create New Post', new_admin_post_path, :class => 'btn btn-primary btn-medium'
+      p
+      - @posts.each do |post|
+        .well
+          .btn-toolbar.pull-right
+            .btn-group
+              a class="btn" href="#{edit_admin_post_path(post)}"
+                li.icon-pencil
+              a class="btn" href="#{admin_post_path(post)}" data-confirm="Are you sure?" data-method="delete"
+                li.icon-remove
+          /= link_to 'Destroy', admin_post_path(post), confirm: 'Are you sure?', method: :delete, :class => 'pull-right'
+          p
+            h4 = link_to post.title, post
+            i.muted = post.created_at.strftime("%d-%b-%Y %I:%M:%S %p")  
+          hr
+          small = raw(summarize(post.description, 200))
+          P 
+            strong Tags :  
+            small #{post.tag_list}
+            
+              

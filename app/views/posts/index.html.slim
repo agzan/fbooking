@@ -1,0 +1,28 @@
+.row-fluid.span12
+    .span3
+      .well
+        .archives
+          h3 Blog Archive
+          - @post_months.sort.reverse.each do |month, posts|
+            h5 =h month.strftime("%B %Y")
+            ul
+              - for post in posts
+                li =h link_to post.title, post_path(post)
+    .span6
+        /.page-header
+        /h3 Recent posts
+        - @posts.each do |post|
+          .well
+            h4 = link_to post.title, post
+            small = raw(summarize(post.description, 400))
+            P 
+              strong Tags :  
+              small #{post.tag_list}
+            i.muted = post.created_at.strftime("%d-%b-%Y %I:%M:%S %p")
+    .span3
+      .well
+        ul.nav.nav-list
+          .nav-header Categories
+          .divider
+          - tag_cloud(@tags, %w(css1 css2 css3 css4)) do |tag, css_class|
+            li = link_to tag.name+'('+tag.count.to_s+')', posts_path(:tag => tag.name), :class => css_class
