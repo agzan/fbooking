@@ -4599,15 +4599,15 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #515151;
-  background-image: -moz-linear-gradient(top, #666666, #333333);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#666666), to(#333333));
-  background-image: -webkit-linear-gradient(top, #666666, #333333);
-  background-image: -o-linear-gradient(top, #666666, #333333);
-  background-image: linear-gradient(top, #666666, #333333);
+  background-color: #f9f9f9;
+  background-image: -moz-linear-gradient(top, white, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
+  background-image: -o-linear-gradient(top, white, #f2f2f2);
+  background-image: linear-gradient(top, white, #f2f2f2);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff666666', endColorstr='#ff333333', GradientType=0);
-  border: 1px solid #141414;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  border: 1px solid #d4d4d4;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -4646,8 +4646,8 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: white;
-  text-shadow: 0 1px 0 #666666;
+  color: #777777;
+  text-shadow: 0 1px 0 white;
 }
 /* line 60, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/navbar.scss */
 .navbar .brand:hover {
@@ -4662,7 +4662,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 74, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/navbar.scss */
 .navbar-link {
-  color: white;
+  color: #777777;
 }
 /* line 76, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/navbar.scss */
 .navbar-link:hover {
@@ -4673,8 +4673,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .divider-vertical {
   height: 40px;
   margin: 0 9px;
-  border-left: 1px solid #333333;
-  border-right: 1px solid #666666;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid white;
 }
 
 /* line 93, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/navbar.scss */
@@ -4855,9 +4855,9 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: white;
+  color: #777777;
   text-decoration: none;
-  text-shadow: 0 1px 0 #666666;
+  text-shadow: 0 1px 0 white;
 }
 
 /* line 246, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/navbar.scss */
@@ -4879,7 +4879,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > .active > a:focus {
   color: #555555;
   text-decoration: none;
-  background-color: #262626;
+  background-color: #e6e6e6;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -4894,17 +4894,17 @@ input[type="submit"].btn.btn-mini {
   margin-right: 5px;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #444444;
-  background-image: -moz-linear-gradient(top, #595959, #262626);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#595959), to(#262626));
-  background-image: -webkit-linear-gradient(top, #595959, #262626);
-  background-image: -o-linear-gradient(top, #595959, #262626);
-  background-image: linear-gradient(top, #595959, #262626);
+  background-color: #ededed;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: linear-gradient(top, #f2f2f2, #e6e6e6);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff595959', endColorstr='#ff262626', GradientType=0);
-  border-color: #262626 #262626 black;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #262626;
+  *background-color: #e6e6e6;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
@@ -4914,12 +4914,12 @@ input[type="submit"].btn.btn-mini {
 /* line 523, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/mixins.scss */
 .navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
   color: white;
-  background-color: #262626;
-  *background-color: #1a1a1a;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
 }
 /* line 531, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/mixins.scss */
 .navbar .btn-navbar:active, .navbar .btn-navbar.active {
-  background-color: #0d0d0d \9;
+  background-color: #cccccc \9;
 }
 
 /* line 279, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/navbar.scss */
@@ -4985,14 +4985,14 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #262626;
+  background-color: #e6e6e6;
   color: #555555;
 }
 
 /* line 344, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/navbar.scss */
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: white;
-  border-bottom-color: white;
+  border-top-color: #777777;
+  border-bottom-color: #777777;
 }
 
 /* line 350, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/navbar.scss */
@@ -7762,7 +7762,7 @@ a.label:hover, a.badge:hover {
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
-    color: white;
+    color: #777777;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -7785,7 +7785,7 @@ a.label:hover, a.badge:hover {
   /* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/responsive-navbar.scss */
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
-    background-color: #333333;
+    background-color: #f2f2f2;
   }
 
   /* line 88, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/anjlab-bootstrap-rails-2.2.1.0/vendor/frameworks/twitter/bootstrap/responsive-navbar.scss */
@@ -7853,8 +7853,8 @@ a.label:hover, a.badge:hover {
     float: none;
     padding: 10px 15px;
     margin: 10px 0;
-    border-top: 1px solid #333333;
-    border-bottom: 1px solid #333333;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -7900,4 +7900,43 @@ a.label:hover, a.badge:hover {
 }
 .controls{
 	top: 10px;
+}
+.panel{
+  box-shadow: 0px 0px 0px 5px rgba( 255, 255, 255, 0.4 ), 0px 4px 20px rgba( 0, 0, 0, 0.33 );
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%,
+  rgba(246,246,246,1) 23%, rgba(246,246,246,1) 24%, rgba(244,244,244,0.69)
+  41%, rgba(237,237,237,0.69) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom,
+  color-stop(0%,rgba(255,255,255,1)), color-stop(23%,rgba(246,246,246,1)),
+  color-stop(24%,rgba(246,246,246,1)),
+  color-stop(41%,rgba(244,244,244,0.69)),
+  color-stop(100%,rgba(237,237,237,0.69))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1)
+  0%,rgba(246,246,246,1) 23%,rgba(246,246,246,1) 24%,rgba(244,244,244,0.69)
+  41%,rgba(237,237,237,0.69) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,255,255,1)
+  0%,rgba(246,246,246,1) 23%,rgba(246,246,246,1) 24%,rgba(244,244,244,0.69)
+  41%,rgba(237,237,237,0.69) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1)
+  0%,rgba(246,246,246,1) 23%,rgba(246,246,246,1) 24%,rgba(244,244,244,0.69)
+  41%,rgba(237,237,237,0.69) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1)
+  0%,rgba(246,246,246,1) 23%,rgba(246,246,246,1) 24%,rgba(244,244,244,0.69)
+  41%,rgba(237,237,237,0.69) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr='#ffffff', endColorstr='#b0ededed',GradientType=0 );
+
+  padding: 10px;
+  margin-bottom: 20px;
+  /* background: #BFB8E5; */
+  height: 200px;
+  background-image: url(Background1.jpg);
+}
+
+.inner{
+	margin-top: 10px;
+	padding: 10px;
 }
