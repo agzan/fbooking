@@ -30,7 +30,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'therubyracer'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -54,9 +54,5 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest'
-  gem 'capybara'
-  gem 'turn'
-  gem 'win32console'
-  gem 'launchy'
+  
 end
